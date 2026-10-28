@@ -44,24 +44,24 @@ export const LandingPage: React.FC = () => {
   return (
     <div className="min-h-screen bg-[#F5F7FA] text-[#172B3A] font-sans flex flex-col selection:bg-teal-100 selection:text-teal-900">
       {/* 1. TOP ANNOUNCEMENT & INSTITUTIONAL HEADER */}
-      <div className="bg-navy-950 text-slate-300 border-b border-navy-800 text-xs py-2 px-4 sm:px-6">
+      <div className="bg-slate-100 text-slate-700 border-b border-slate-200 text-xs py-2 px-4 sm:px-6">
         <div className="max-w-7xl mx-auto flex flex-col sm:flex-row justify-between items-center gap-2">
           <div className="flex items-center gap-2">
-            <span className="inline-flex items-center gap-1.5 px-2 py-0.5 rounded-full bg-teal-500/10 text-teal-300 font-medium border border-teal-500/20 whitespace-nowrap">
-              <span className="w-1.5 h-1.5 rounded-full bg-teal-400 animate-pulse"></span>
+            <span className="inline-flex items-center gap-1.5 px-2.5 py-0.5 rounded-full bg-teal-50 text-teal-800 font-semibold border border-teal-200 whitespace-nowrap shadow-2xs">
+              <span className="w-1.5 h-1.5 rounded-full bg-teal-600 animate-pulse"></span>
               Institutional Mainnet
             </span>
-            <span className="text-slate-400 truncate hidden md:inline">
+            <span className="text-slate-600 truncate hidden md:inline font-medium">
               International Mineral Trade & Responsible Extraction Standards Aligned
             </span>
           </div>
-          <div className="flex items-center gap-4 text-slate-400">
+          <div className="flex items-center gap-4 text-slate-600">
             <span className="flex items-center gap-1">
-              <Lock className="w-3 h-3 text-teal-400" /> 256-Bit TLS 1.3
+              <Lock className="w-3 h-3 text-teal-700" /> 256-Bit TLS 1.3
             </span>
-            <span className="hidden md:inline text-slate-600">•</span>
+            <span className="hidden md:inline text-slate-300">•</span>
             <span className="hidden md:inline">OECD Due Diligence Standard</span>
-            <span className="hidden md:inline text-slate-600">•</span>
+            <span className="hidden md:inline text-slate-300">•</span>
             <span className="hidden md:inline">ESG Compliant</span>
           </div>
         </div>
@@ -199,59 +199,60 @@ export const LandingPage: React.FC = () => {
       </header>
 
       {/* 3. HERO SECTION */}
-      <section className="relative overflow-hidden bg-gradient-to-b from-navy-900 via-navy-900 to-navy-950 text-white pt-20 pb-28">
+      <section className="relative overflow-hidden bg-gradient-to-b from-slate-50 via-white to-slate-50 text-slate-900 pt-20 pb-24 border-b border-slate-200">
         {/* Subtle geometric pattern background */}
-        <div className="absolute inset-0 opacity-10 pointer-events-none bg-[radial-gradient(#0F9D92_1px,transparent_1px)] [background-size:24px_24px]"></div>
+        <div className="absolute inset-0 opacity-40 pointer-events-none bg-[radial-gradient(#cbd5e1_1px,transparent_1px)] [background-size:24px_24px]"></div>
+        <div className="absolute -top-24 right-0 w-[500px] h-[500px] bg-teal-500/5 rounded-full blur-3xl pointer-events-none"></div>
 
         <div className="max-w-7xl mx-auto px-4 sm:px-6 relative z-10">
           <div className="max-w-3xl">
-            <div className="inline-flex items-center gap-2 px-3 py-1.5 rounded-full bg-teal-500/15 border border-teal-500/30 text-teal-300 text-xs font-semibold uppercase tracking-wider mb-6">
-              <ShieldCheck className="w-4 h-4 text-teal-400" />
+            <div className="inline-flex items-center gap-2 px-3 py-1.5 rounded-full bg-teal-50 border border-teal-200 text-teal-800 text-xs font-bold uppercase tracking-wider mb-6 shadow-2xs">
+              <ShieldCheck className="w-4 h-4 text-teal-600" />
               Verified Minerals • Transparent Trade • Global Opportunities
             </div>
 
-            <h1 className="text-4xl sm:text-5xl lg:text-6xl font-extrabold tracking-tight text-white leading-[1.15] mb-6 font-heading">
-              The Institutional Gateway for Global Mineral Trade & Cryptographic Traceability
+            <h1 className="text-4xl sm:text-5xl lg:text-6xl font-extrabold tracking-tight text-navy-900 leading-[1.15] mb-6 font-heading">
+              The Institutional Gateway for Global Mineral Trade &amp; Cryptographic Traceability
             </h1>
 
-            <p className="text-lg sm:text-xl text-slate-300 leading-relaxed font-normal mb-8 max-w-2xl">
+            <p className="text-lg sm:text-xl text-slate-600 leading-relaxed font-normal mb-8 max-w-2xl">
               Connecting vetted mineral extraction enterprises with sovereign and industrial buyers worldwide. Verified mining licenses, ISO/IEC 17025 laboratory assays, SHA-256 tamper-evident provenance, and milestone-locked trade finance escrow.
             </p>
 
             <div className="flex flex-col sm:flex-row items-stretch sm:items-center gap-4 mb-12">
               <Link
                 to="/login"
-                className="px-7 py-4 rounded-xl bg-teal-600 hover:bg-teal-500 text-white font-bold text-base shadow-lg shadow-teal-900/40 transition-all flex items-center justify-center gap-3 group"
+                className="px-7 py-4 rounded-xl bg-navy-900 hover:bg-navy-800 text-white font-bold text-base shadow-sm hover:shadow transition-all flex items-center justify-center gap-3 group"
               >
                 <span>Launch Institutional Portal</span>
-                <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
+                <ArrowRight className="w-5 h-5 text-teal-400 group-hover:translate-x-1 transition-transform" />
               </Link>
               <a
                 href="#marketplace"
-                className="px-7 py-4 rounded-xl bg-navy-800/80 hover:bg-navy-800 text-slate-200 hover:text-white font-semibold text-base border border-slate-700/80 transition-all flex items-center justify-center gap-2"
+                className="px-7 py-4 rounded-xl bg-white hover:bg-slate-50 text-slate-800 hover:text-navy-900 font-semibold text-base border border-slate-300 shadow-2xs hover:border-slate-400 transition-all flex items-center justify-center gap-2"
               >
                 <span>Browse Verified Supply</span>
-                <ChevronRight className="w-4 h-4 text-teal-400" />
+                <ChevronRight className="w-4 h-4 text-teal-600" />
               </a>
             </div>
 
             {/* Key Trust Stats Bar */}
-            <div className="grid grid-cols-2 sm:grid-cols-4 gap-4 pt-8 border-t border-slate-800/80">
+            <div className="grid grid-cols-2 sm:grid-cols-4 gap-6 pt-8 border-t border-slate-200">
               <div>
-                <div className="text-3xl font-extrabold text-white font-mono">$48.6M+</div>
-                <div className="text-xs font-medium text-slate-400 uppercase tracking-wider mt-1">Verified Inquiries</div>
+                <div className="text-3xl font-extrabold text-navy-900 font-mono">$48.6M+</div>
+                <div className="text-xs font-semibold text-slate-500 uppercase tracking-wider mt-1">Verified Inquiries</div>
               </div>
               <div>
-                <div className="text-3xl font-extrabold text-teal-400 font-mono">16 Vetted</div>
-                <div className="text-xs font-medium text-slate-400 uppercase tracking-wider mt-1">Mining Enterprises</div>
+                <div className="text-3xl font-extrabold text-teal-700 font-mono">16 Vetted</div>
+                <div className="text-xs font-semibold text-slate-500 uppercase tracking-wider mt-1">Mining Enterprises</div>
               </div>
               <div>
-                <div className="text-3xl font-extrabold text-white font-mono">100%</div>
-                <div className="text-xs font-medium text-slate-400 uppercase tracking-wider mt-1">ISO 17025 Assayed</div>
+                <div className="text-3xl font-extrabold text-navy-900 font-mono">100%</div>
+                <div className="text-xs font-semibold text-slate-500 uppercase tracking-wider mt-1">ISO 17025 Assayed</div>
               </div>
               <div>
-                <div className="text-3xl font-extrabold text-teal-400 font-mono">0 Breaches</div>
-                <div className="text-xs font-medium text-slate-400 uppercase tracking-wider mt-1">SHA-256 Provenance</div>
+                <div className="text-3xl font-extrabold text-teal-700 font-mono">0 Breaches</div>
+                <div className="text-xs font-semibold text-slate-500 uppercase tracking-wider mt-1">SHA-256 Provenance</div>
               </div>
             </div>
           </div>
@@ -259,17 +260,17 @@ export const LandingPage: React.FC = () => {
       </section>
 
       {/* 4. LIVE COMMODITY MARKET TICKER */}
-      <section className="bg-navy-950 border-y border-navy-800 py-3 overflow-x-auto shadow-inner">
+      <section className="bg-slate-100/90 border-b border-slate-200 py-3 overflow-x-auto">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 flex items-center gap-8 min-w-max text-xs">
-          <div className="flex items-center gap-1.5 font-bold uppercase tracking-wider text-teal-400 border-r border-navy-800 pr-4">
-            <span className="w-2 h-2 rounded-full bg-teal-400 animate-ping"></span>
+          <div className="flex items-center gap-2 font-bold uppercase tracking-wider text-teal-800 border-r border-slate-300 pr-4">
+            <span className="w-2 h-2 rounded-full bg-teal-600 animate-ping"></span>
             Market Indicatives
           </div>
           {marketBenchmarks.map((item, idx) => (
             <div key={idx} className="flex items-center gap-2">
-              <span className="text-slate-400 font-medium">{item.mineral}:</span>
-              <span className="font-mono font-bold text-white">${formatNumber(item.price)} / {item.unit}</span>
-              <span className={`font-mono font-semibold ${item.positive ? 'text-emerald-400' : 'text-rose-400'}`}>
+              <span className="text-slate-600 font-medium">{item.mineral}:</span>
+              <span className="font-mono font-bold text-navy-900">${formatNumber(item.price)} / {item.unit}</span>
+              <span className={`font-mono font-semibold ${item.positive ? 'text-emerald-700' : 'text-rose-700'}`}>
                 {item.change}
               </span>
               <span className="text-[10px] text-slate-500">({item.benchmark})</span>
@@ -500,46 +501,46 @@ export const LandingPage: React.FC = () => {
             </div>
 
             {/* Visual Cryptographic Hash Card */}
-            <div className="bg-navy-950 rounded-2xl border border-navy-800 p-6 text-slate-300 shadow-xl font-mono text-xs">
-              <div className="flex items-center justify-between pb-4 border-b border-navy-800">
-                <span className="flex items-center gap-2 text-teal-400 font-bold">
-                  <span className="w-2 h-2 rounded-full bg-teal-400"></span>
+            <div className="bg-white rounded-2xl border border-slate-200 p-6 text-slate-800 shadow-card font-mono text-xs">
+              <div className="flex items-center justify-between pb-4 border-b border-slate-200">
+                <span className="flex items-center gap-2 text-teal-800 font-bold">
+                  <span className="w-2 h-2 rounded-full bg-teal-600"></span>
                   BATCH-GL-2026-CU01
                 </span>
-                <span className="text-[11px] px-2 py-0.5 rounded bg-teal-900/60 text-teal-300 border border-teal-700/50">
+                <span className="text-[11px] px-2 py-0.5 rounded bg-teal-50 text-teal-800 border border-teal-200 font-semibold font-sans">
                   SHA-256 CHAIN VALID
                 </span>
               </div>
 
-              <div className="space-y-4 my-6">
-                <div className="p-3 rounded-lg bg-navy-900/80 border border-navy-800">
-                  <div className="flex justify-between text-[11px] text-slate-400 mb-1">
-                    <span className="font-sans font-semibold text-white">Event 1: Extraction & Batch Genesis</span>
+              <div className="space-y-3.5 my-6">
+                <div className="p-3 rounded-xl bg-slate-50 border border-slate-200">
+                  <div className="flex justify-between text-[11px] text-slate-500 mb-1">
+                    <span className="font-sans font-semibold text-navy-900">Event 1: Extraction & Batch Genesis</span>
                     <span>Primary Extraction Site</span>
                   </div>
-                  <div className="text-[10px] text-slate-500 truncate">Hash: e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855</div>
+                  <div className="text-[10px] text-slate-600 truncate font-mono">Hash: e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855</div>
                 </div>
 
-                <div className="p-3 rounded-lg bg-navy-900/80 border border-navy-800">
-                  <div className="flex justify-between text-[11px] text-slate-400 mb-1">
-                    <span className="font-sans font-semibold text-white">Event 2: Lab Assay Spectrometry Attached</span>
+                <div className="p-3 rounded-xl bg-slate-50 border border-slate-200">
+                  <div className="flex justify-between text-[11px] text-slate-500 mb-1">
+                    <span className="font-sans font-semibold text-navy-900">Event 2: Lab Assay Spectrometry Attached</span>
                     <span>Alfred H Knight Laboratory</span>
                   </div>
-                  <div className="text-[10px] text-slate-500 truncate">Prev: e3b0c442... | Hash: 8f4e2b17a9c3d5e681b0a234f9e17c093a4b7d...</div>
+                  <div className="text-[10px] text-slate-600 truncate font-mono">Prev: e3b0c442... | Hash: 8f4e2b17a9c3d5e681b0a234f9e17c093a4b7d...</div>
                 </div>
 
-                <div className="p-3 rounded-lg bg-teal-950/40 border border-teal-800/60">
-                  <div className="flex justify-between text-[11px] text-teal-300 mb-1">
-                    <span className="font-sans font-semibold text-white">Event 3: Inland Corridor Dispatch</span>
-                    <span>TAZARA Logistics Terminal</span>
+                <div className="p-3 rounded-xl bg-teal-50/60 border border-teal-200">
+                  <div className="flex justify-between text-[11px] text-teal-900 mb-1">
+                    <span className="font-sans font-semibold text-teal-950">Event 3: Inland Corridor Dispatch</span>
+                    <span className="text-teal-700">TAZARA Logistics Terminal</span>
                   </div>
-                  <div className="text-[10px] text-teal-400 truncate">Prev: 8f4e2b17... | Hash: 4a9d7f12e8b0c3a561d2f789e0b14c562a3f8e...</div>
+                  <div className="text-[10px] text-teal-800 truncate font-mono">Prev: 8f4e2b17... | Hash: 4a9d7f12e8b0c3a561d2f789e0b14c562a3f8e...</div>
                 </div>
               </div>
 
-              <div className="pt-4 border-t border-navy-800 flex items-center justify-between text-[11px] text-slate-400">
+              <div className="pt-4 border-t border-slate-200 flex items-center justify-between text-[11px] text-slate-500">
                 <span>Algorithm: SHA-256 (Web Crypto)</span>
-                <span className="text-teal-400 font-sans font-semibold">100% Cryptographic Continuity</span>
+                <span className="text-teal-700 font-sans font-semibold">100% Cryptographic Continuity</span>
               </div>
             </div>
           </div>
@@ -608,25 +609,28 @@ export const LandingPage: React.FC = () => {
       </section>
 
       {/* 9. BOTTOM CALL TO ACTION */}
-      <section className="bg-gradient-to-r from-navy-900 via-navy-800 to-navy-900 text-white py-20 border-t border-navy-700">
+      <section className="bg-gradient-to-b from-slate-50 to-white text-slate-900 py-20 border-t border-slate-200">
         <div className="max-w-5xl mx-auto px-4 sm:px-6 text-center">
-          <h2 className="text-3xl sm:text-4xl font-extrabold text-white tracking-tight font-heading mb-4">
+          <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-teal-50 border border-teal-200 text-teal-800 text-xs font-bold uppercase tracking-wider mb-4 shadow-2xs">
+            Institutional Clearance
+          </div>
+          <h2 className="text-3xl sm:text-4xl font-extrabold text-navy-900 tracking-tight font-heading mb-4">
             Begin Verified Institutional Trading Operations
           </h2>
-          <p className="text-slate-300 text-base max-w-2xl mx-auto mb-8">
+          <p className="text-slate-600 text-base max-w-2xl mx-auto mb-8">
             Access the live marketplace desk, audit lab documentation, issue commercial RFQs, or onboard an authorized mineral production organization.
           </p>
           <div className="flex flex-col sm:flex-row justify-center items-center gap-4">
             <Link
               to="/login"
-              className="w-full sm:w-auto px-8 py-4 rounded-xl bg-teal-600 hover:bg-teal-500 text-white font-bold text-base shadow-lg transition-all flex items-center justify-center gap-2 group"
+              className="w-full sm:w-auto px-8 py-4 rounded-xl bg-navy-900 hover:bg-navy-800 text-white font-bold text-base shadow-sm hover:shadow transition-all flex items-center justify-center gap-2 group"
             >
               <span>Sign In to Institutional Portal</span>
-              <ArrowRight className="w-4 h-4 group-hover:translate-x-0.5 transition-transform" />
+              <ArrowRight className="w-4 h-4 text-teal-400 group-hover:translate-x-0.5 transition-transform" />
             </Link>
             <Link
               to="/request-access"
-              className="w-full sm:w-auto px-8 py-4 rounded-xl bg-navy-700/80 hover:bg-navy-700 text-white font-semibold text-base border border-slate-600 transition-all"
+              className="w-full sm:w-auto px-8 py-4 rounded-xl bg-white hover:bg-slate-50 text-slate-800 font-semibold text-base border border-slate-300 shadow-2xs transition-all"
             >
               Request Enterprise Access
             </Link>
@@ -635,13 +639,13 @@ export const LandingPage: React.FC = () => {
       </section>
 
       {/* 10. ENTERPRISE FOOTER */}
-      <footer className="bg-navy-950 text-slate-400 text-xs py-16 border-t border-navy-800">
+      <footer className="bg-white text-slate-600 text-xs py-16 border-t border-slate-200">
         <div className="max-w-7xl mx-auto px-4 sm:px-6">
           <div className="grid grid-cols-1 md:grid-cols-4 gap-10 mb-12">
             <div>
-              <div className="flex items-center gap-2 text-white font-bold text-lg mb-3">
-                <div className="w-7 h-7 rounded bg-teal-600 flex items-center justify-center text-white">
-                  <svg className="w-4 h-4 fill-current" viewBox="0 0 24 24">
+              <div className="flex items-center gap-2 text-navy-900 font-bold text-lg mb-3">
+                <div className="w-7 h-7 rounded-lg bg-navy-900 flex items-center justify-center text-teal-400">
+                  <svg className="w-4 h-4 fill-current text-teal-400" viewBox="0 0 24 24">
                     <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5" />
                   </svg>
                 </div>
@@ -653,19 +657,19 @@ export const LandingPage: React.FC = () => {
             </div>
 
             <div>
-              <h4 className="font-bold text-white uppercase tracking-wider text-[11px] mb-3">Institutional Desks</h4>
-              <ul className="space-y-2 text-slate-400">
-                <li><span className="text-white font-medium">Operations Desk</span>: Extraction Oversight & Trade Facilitation</li>
-                <li><span className="text-white font-medium">Seoul</span>: Asia-Pacific Buyer Desk (Gangnam)</li>
-                <li><span className="text-white font-medium">Geneva</span>: Trade Finance & Logistics Desk</li>
-                <li><span className="text-white font-medium">London</span>: LME Liaison & Market Intelligence</li>
+              <h4 className="font-bold text-navy-900 uppercase tracking-wider text-[11px] mb-3">Institutional Desks</h4>
+              <ul className="space-y-2 text-slate-600">
+                <li><span className="text-navy-900 font-medium">Operations Desk</span>: Extraction Oversight &amp; Trade Facilitation</li>
+                <li><span className="text-navy-900 font-medium">Seoul</span>: Asia-Pacific Buyer Desk (Gangnam)</li>
+                <li><span className="text-navy-900 font-medium">Geneva</span>: Trade Finance &amp; Logistics Desk</li>
+                <li><span className="text-navy-900 font-medium">London</span>: LME Liaison &amp; Market Intelligence</li>
               </ul>
             </div>
 
             <div>
-              <h4 className="font-bold text-white uppercase tracking-wider text-[11px] mb-3">Compliance Standards</h4>
-              <ul className="space-y-2 text-slate-400">
-                <li>International Mining Standards & Best Practice</li>
+              <h4 className="font-bold text-navy-900 uppercase tracking-wider text-[11px] mb-3">Compliance Standards</h4>
+              <ul className="space-y-2 text-slate-600">
+                <li>International Mining Standards &amp; Best Practice</li>
                 <li>ISO 14001 Environmental Management Standards</li>
                 <li>Responsible Minerals Initiative (RMI)</li>
                 <li>OECD Due Diligence Guidance (Annex II)</li>
@@ -673,23 +677,24 @@ export const LandingPage: React.FC = () => {
             </div>
 
             <div>
-              <h4 className="font-bold text-white uppercase tracking-wider text-[11px] mb-3">Security & Compliance</h4>
+              <h4 className="font-bold text-navy-900 uppercase tracking-wider text-[11px] mb-3">Security &amp; Compliance</h4>
               <p className="text-slate-500 text-[11px] leading-relaxed mb-3">
                 Restricted to authorized commercial entities. All transactions and cryptographic chain-of-custody hashes are recorded on an immutable operational audit log.
               </p>
-              <div className="text-[11px] text-teal-400 font-mono">
+              <div className="text-[11px] text-teal-700 font-mono font-medium flex items-center gap-1.5">
+                <span className="w-2 h-2 rounded-full bg-emerald-500"></span>
                 System Status: Operational • All Nodes Nominal
               </div>
             </div>
           </div>
 
-          <div className="pt-8 border-t border-navy-900 flex flex-col sm:flex-row justify-between items-center gap-4 text-slate-500 text-[11px]">
+          <div className="pt-8 border-t border-slate-200 flex flex-col sm:flex-row justify-between items-center gap-4 text-slate-500 text-[11px]">
             <div>© 2026 MINERALINK International Ltd. All rights reserved.</div>
             <div className="flex gap-6">
-              <span>Privacy Policy</span>
-              <span>Terms of Trade</span>
-              <span>Statutory Compliance Notice</span>
-              <span>Cryptographic Audit Spec</span>
+              <span className="hover:text-slate-800 cursor-pointer">Privacy Policy</span>
+              <span className="hover:text-slate-800 cursor-pointer">Terms of Trade</span>
+              <span className="hover:text-slate-800 cursor-pointer">Statutory Compliance Notice</span>
+              <span className="hover:text-slate-800 cursor-pointer">Cryptographic Audit Spec</span>
             </div>
           </div>
         </div>
