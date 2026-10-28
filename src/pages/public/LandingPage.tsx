@@ -204,56 +204,54 @@ export const LandingPage: React.FC = () => {
         <div className="absolute inset-0 opacity-40 pointer-events-none bg-[radial-gradient(#cbd5e1_1px,transparent_1px)] [background-size:24px_24px]"></div>
         <div className="absolute -top-24 right-0 w-[500px] h-[500px] bg-teal-500/5 rounded-full blur-3xl pointer-events-none"></div>
 
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 relative z-10">
-          <div className="max-w-3xl">
-            <div className="inline-flex items-center gap-2 px-3 py-1.5 rounded-full bg-teal-50 border border-teal-200 text-teal-800 text-xs font-bold uppercase tracking-wider mb-6 shadow-2xs">
-              <ShieldCheck className="w-4 h-4 text-teal-600" />
-              Verified Minerals • Transparent Trade • Global Opportunities
+        <div className="max-w-5xl mx-auto px-4 sm:px-6 relative z-10 text-center flex flex-col items-center">
+          <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-teal-50 border border-teal-200 text-teal-800 text-xs font-bold uppercase tracking-wider mb-6 shadow-2xs">
+            <ShieldCheck className="w-4 h-4 text-teal-600" />
+            <span>Verified Minerals • Transparent Trade • Global Opportunities</span>
+          </div>
+
+          <h1 className="text-4xl sm:text-5xl lg:text-6xl font-extrabold tracking-tight text-navy-900 leading-[1.15] mb-6 font-heading max-w-4xl mx-auto">
+            The Institutional Gateway for Global Mineral Trade &amp; Cryptographic Traceability
+          </h1>
+
+          <p className="text-lg sm:text-xl text-slate-600 leading-relaxed font-normal mb-8 max-w-3xl mx-auto">
+            Connecting vetted mineral extraction enterprises with sovereign and industrial buyers worldwide. Verified mining licenses, ISO/IEC 17025 laboratory assays, SHA-256 tamper-evident provenance, and milestone-locked trade finance escrow.
+          </p>
+
+          <div className="flex flex-col sm:flex-row items-center justify-center gap-4 mb-14 w-full sm:w-auto">
+            <Link
+              to="/login"
+              className="w-full sm:w-auto px-7 py-4 rounded-xl bg-navy-900 hover:bg-navy-800 text-white font-bold text-base shadow-sm hover:shadow transition-all flex items-center justify-center gap-3 group"
+            >
+              <span>Launch Institutional Portal</span>
+              <ArrowRight className="w-5 h-5 text-teal-400 group-hover:translate-x-1 transition-transform" />
+            </Link>
+            <a
+              href="#marketplace"
+              className="w-full sm:w-auto px-7 py-4 rounded-xl bg-white hover:bg-slate-50 text-slate-800 hover:text-navy-900 font-semibold text-base border border-slate-300 shadow-2xs hover:border-slate-400 transition-all flex items-center justify-center gap-2"
+            >
+              <span>Browse Verified Supply</span>
+              <ChevronRight className="w-4 h-4 text-teal-600" />
+            </a>
+          </div>
+
+          {/* Key Trust Stats Bar */}
+          <div className="w-full max-w-4xl mx-auto grid grid-cols-2 sm:grid-cols-4 gap-6 pt-8 border-t border-slate-200">
+            <div className="text-center">
+              <div className="text-3xl font-extrabold text-navy-900 font-mono">$48.6M+</div>
+              <div className="text-xs font-semibold text-slate-500 uppercase tracking-wider mt-1">Verified Inquiries</div>
             </div>
-
-            <h1 className="text-4xl sm:text-5xl lg:text-6xl font-extrabold tracking-tight text-navy-900 leading-[1.15] mb-6 font-heading">
-              The Institutional Gateway for Global Mineral Trade &amp; Cryptographic Traceability
-            </h1>
-
-            <p className="text-lg sm:text-xl text-slate-600 leading-relaxed font-normal mb-8 max-w-2xl">
-              Connecting vetted mineral extraction enterprises with sovereign and industrial buyers worldwide. Verified mining licenses, ISO/IEC 17025 laboratory assays, SHA-256 tamper-evident provenance, and milestone-locked trade finance escrow.
-            </p>
-
-            <div className="flex flex-col sm:flex-row items-stretch sm:items-center gap-4 mb-12">
-              <Link
-                to="/login"
-                className="px-7 py-4 rounded-xl bg-navy-900 hover:bg-navy-800 text-white font-bold text-base shadow-sm hover:shadow transition-all flex items-center justify-center gap-3 group"
-              >
-                <span>Launch Institutional Portal</span>
-                <ArrowRight className="w-5 h-5 text-teal-400 group-hover:translate-x-1 transition-transform" />
-              </Link>
-              <a
-                href="#marketplace"
-                className="px-7 py-4 rounded-xl bg-white hover:bg-slate-50 text-slate-800 hover:text-navy-900 font-semibold text-base border border-slate-300 shadow-2xs hover:border-slate-400 transition-all flex items-center justify-center gap-2"
-              >
-                <span>Browse Verified Supply</span>
-                <ChevronRight className="w-4 h-4 text-teal-600" />
-              </a>
+            <div className="text-center">
+              <div className="text-3xl font-extrabold text-teal-700 font-mono">16 Vetted</div>
+              <div className="text-xs font-semibold text-slate-500 uppercase tracking-wider mt-1">Mining Enterprises</div>
             </div>
-
-            {/* Key Trust Stats Bar */}
-            <div className="grid grid-cols-2 sm:grid-cols-4 gap-6 pt-8 border-t border-slate-200">
-              <div>
-                <div className="text-3xl font-extrabold text-navy-900 font-mono">$48.6M+</div>
-                <div className="text-xs font-semibold text-slate-500 uppercase tracking-wider mt-1">Verified Inquiries</div>
-              </div>
-              <div>
-                <div className="text-3xl font-extrabold text-teal-700 font-mono">16 Vetted</div>
-                <div className="text-xs font-semibold text-slate-500 uppercase tracking-wider mt-1">Mining Enterprises</div>
-              </div>
-              <div>
-                <div className="text-3xl font-extrabold text-navy-900 font-mono">100%</div>
-                <div className="text-xs font-semibold text-slate-500 uppercase tracking-wider mt-1">ISO 17025 Assayed</div>
-              </div>
-              <div>
-                <div className="text-3xl font-extrabold text-teal-700 font-mono">0 Breaches</div>
-                <div className="text-xs font-semibold text-slate-500 uppercase tracking-wider mt-1">SHA-256 Provenance</div>
-              </div>
+            <div className="text-center">
+              <div className="text-3xl font-extrabold text-navy-900 font-mono">100%</div>
+              <div className="text-xs font-semibold text-slate-500 uppercase tracking-wider mt-1">ISO 17025 Assayed</div>
+            </div>
+            <div className="text-center">
+              <div className="text-3xl font-extrabold text-teal-700 font-mono">0 Breaches</div>
+              <div className="text-xs font-semibold text-slate-500 uppercase tracking-wider mt-1">SHA-256 Provenance</div>
             </div>
           </div>
         </div>

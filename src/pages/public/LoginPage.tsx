@@ -40,62 +40,62 @@ export const LoginPage: React.FC = () => {
     badgeColor: string;
     accentGlow: string;
   }> = [
-    {
-      role: 'buyer',
-      name: 'Jin-Woo Park',
-      org: 'Hanwha Global Resources (Seoul)',
-      title: 'Head of Critical Metals Procurement',
-      email: 'jinwoo.park@hanwha-materials.co.kr',
-      badge: 'International Buyer',
-      clearance: 'Commercial Trading Desk • Tier 1 Buyer',
-      badgeColor: 'bg-blue-50 text-blue-700 border-blue-200/80',
-      accentGlow: 'hover:border-blue-400/80 hover:bg-blue-50/20'
-    },
-    {
-      role: 'supplier',
-      name: 'Mwamba Chilufya',
-      org: 'Kafue Mineral Trading Ltd',
-      title: 'Commercial Director',
-      email: 'm.chilufya@kafueminerals.com',
-      badge: 'Verified Mineral Supplier',
-      clearance: 'Mining License #21904-HQ-LEL • Vetted Supplier',
-      badgeColor: 'bg-teal-50 text-teal-700 border-teal-200/80',
-      accentGlow: 'hover:border-teal-400/80 hover:bg-teal-50/20'
-    },
-    {
-      role: 'admin',
-      name: 'Mizinga Kaluba',
-      org: 'MINERALINK Trade Authority',
-      title: 'Principal Systems Administrator',
-      email: 'm.kaluba@mineralink.org',
-      badge: 'Platform Administrator',
-      clearance: 'Full Mainnet Root Governance & Escrow Control',
-      badgeColor: 'bg-purple-50 text-purple-700 border-purple-200/80',
-      accentGlow: 'hover:border-purple-400/80 hover:bg-purple-50/20'
-    },
-    {
-      role: 'compliance',
-      name: 'Bwalya Tembo',
-      org: 'Global Extractive Compliance Unit',
-      title: 'Senior Audit Inspector',
-      email: 'b.tembo@compliance-authority.org',
-      badge: 'Compliance Officer',
-      clearance: 'Statutory Mining Assays & OECD Chain-of-Custody',
-      badgeColor: 'bg-amber-50 text-amber-800 border-amber-200/80',
-      accentGlow: 'hover:border-amber-400/80 hover:bg-amber-50/20'
-    },
-    {
-      role: 'investor',
-      name: 'Seung-Min Lee',
-      org: 'Korea Strategic Metals Fund',
-      title: 'Senior Investment Director',
-      email: 'sm.lee@k-metalsfund.co.kr',
-      badge: 'Institutional Investor',
-      clearance: 'Sovereign Mineral Supply Offtake & Finance',
-      badgeColor: 'bg-emerald-50 text-emerald-800 border-emerald-200/80',
-      accentGlow: 'hover:border-emerald-400/80 hover:bg-emerald-50/20'
-    }
-  ];
+      {
+        role: 'buyer',
+        name: 'Jin-Woo Park',
+        org: 'Hanwha Global Resources (Seoul)',
+        title: 'Head of Critical Metals Procurement',
+        email: 'jinwoo.park@hanwha-materials.co.kr',
+        badge: 'International Buyer',
+        clearance: 'Commercial Trading Desk • Tier 1 Buyer',
+        badgeColor: 'bg-blue-50 text-blue-700 border-blue-200/80',
+        accentGlow: 'hover:border-blue-400/80 hover:bg-blue-50/20'
+      },
+      {
+        role: 'supplier',
+        name: 'Mwamba Chilufya',
+        org: 'Kafue Mineral Trading Ltd',
+        title: 'Commercial Director',
+        email: 'm.chilufya@kafueminerals.com',
+        badge: 'Verified Mineral Supplier',
+        clearance: 'Mining License #21904-HQ-LEL • Vetted Supplier',
+        badgeColor: 'bg-teal-50 text-teal-700 border-teal-200/80',
+        accentGlow: 'hover:border-teal-400/80 hover:bg-teal-50/20'
+      },
+      {
+        role: 'admin',
+        name: 'Mizinga Kaluba',
+        org: 'MINERALINK Trade Authority',
+        title: 'Principal Systems Administrator',
+        email: 'm.kaluba@mineralink.org',
+        badge: 'Platform Administrator',
+        clearance: 'Full Mainnet Root Governance & Escrow Control',
+        badgeColor: 'bg-purple-50 text-purple-700 border-purple-200/80',
+        accentGlow: 'hover:border-purple-400/80 hover:bg-purple-50/20'
+      },
+      {
+        role: 'compliance',
+        name: 'Bwalya Tembo',
+        org: 'Global Extractive Compliance Unit',
+        title: 'Senior Audit Inspector',
+        email: 'b.tembo@compliance-authority.org',
+        badge: 'Compliance Officer',
+        clearance: 'Statutory Mining Assays & OECD Chain-of-Custody',
+        badgeColor: 'bg-amber-50 text-amber-800 border-amber-200/80',
+        accentGlow: 'hover:border-amber-400/80 hover:bg-amber-50/20'
+      },
+      {
+        role: 'investor',
+        name: 'Seung-Min Lee',
+        org: 'Korea Strategic Metals Fund',
+        title: 'Senior Investment Director',
+        email: 'sm.lee@k-metalsfund.co.kr',
+        badge: 'Institutional Investor',
+        clearance: 'Sovereign Mineral Supply Offtake & Finance',
+        badgeColor: 'bg-emerald-50 text-emerald-800 border-emerald-200/80',
+        accentGlow: 'hover:border-emerald-400/80 hover:bg-emerald-50/20'
+      }
+    ];
 
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
@@ -163,7 +163,7 @@ export const LoginPage: React.FC = () => {
           <Link to="/" className="flex items-center gap-3 group shrink-0">
             <div className="w-9 h-9 rounded-xl bg-gradient-to-br from-navy-900 to-navy-800 flex items-center justify-center text-teal-400 shadow-sm border border-navy-700/50 group-hover:scale-105 transition-transform shrink-0">
               <svg className="w-5 h-5 fill-current" viewBox="0 0 24 24">
-                <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"/>
+                <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5" />
               </svg>
             </div>
             <div className="shrink-0">
@@ -196,7 +196,7 @@ export const LoginPage: React.FC = () => {
       {/* 3. MAIN TERMINAL LOGIN INTERFACE */}
       <main className="flex-1 flex items-center justify-center p-4 sm:p-8 lg:p-12 relative z-10">
         <div className="w-full max-w-5xl grid grid-cols-1 lg:grid-cols-12 gap-8 items-stretch">
-          
+
           {/* Left Column: Secure Terminal Authentication Form */}
           <div className="lg:col-span-7 bg-white rounded-2xl border border-slate-200/90 p-6 sm:p-9 shadow-card flex flex-col justify-between relative">
             <div>
@@ -352,7 +352,7 @@ export const LoginPage: React.FC = () => {
               <div className="flex items-center justify-between mb-2">
                 <span className="flex items-center gap-1.5 text-teal-700 text-xs font-bold uppercase tracking-wider">
                   <Building2 className="w-3.5 h-3.5 text-teal-600" />
-                  <span>Verified Enterprise Accounts</span>
+                  <span>Enterprise Accounts</span>
                 </span>
                 <span className="text-[10px] uppercase font-bold text-slate-600 px-2 py-0.5 rounded bg-slate-100 border border-slate-200">
                   Instant Access
@@ -384,7 +384,7 @@ export const LoginPage: React.FC = () => {
                           {user.badge}
                         </span>
                       </div>
-                      
+
                       <div className="text-[11px] text-slate-700 font-semibold truncate">
                         {user.org}
                       </div>
