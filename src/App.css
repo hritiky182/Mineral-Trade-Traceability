@@ -1,0 +1,49 @@
+/* App-level utility styles */
+
+@keyframes pulseSubtle {
+  0%, 100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.6;
+  }
+}
+
+.animate-pulse-subtle {
+  animation: pulseSubtle 3s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+}
+
+/* Ensure smooth text rendering */
+::selection {
+  background-color: #E7F5F2;
+  color: #064E48;
+}
+
+/* Custom shadow utilities for consistency across browser engines */
+.shadow-subtle {
+  box-shadow: 0 1px 3px 0 rgba(16, 36, 58, 0.04), 0 1px 2px 0 rgba(16, 36, 58, 0.02);
+}
+
+.shadow-card {
+  box-shadow: 0 2px 4px -1px rgba(16, 36, 58, 0.06), 0 4px 6px -1px rgba(16, 36, 58, 0.04);
+}
+
+.shadow-elevation {
+  box-shadow: 0 10px 15px -3px rgba(16, 36, 58, 0.08), 0 4px 6px -2px rgba(16, 36, 58, 0.03);
+}
+
+/* Print stylesheets for purchase orders and assay certificates */
+@media print {
+  aside,
+  header,
+  footer,
+  button,
+  .no-print {
+    display: none !important;
+  }
+
+  main {
+    padding: 0 !important;
+    max-width: 100% !important;
+  }
+}

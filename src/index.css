@@ -1,0 +1,77 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --primary-navy: #10243A;
+    --secondary-navy: #183750;
+    --primary-teal: #0F9D92;
+    --light-teal: #E7F5F2;
+    --main-bg: #F5F7FA;
+    --card-bg: #FFFFFF;
+    --primary-text: #172B3A;
+    --secondary-text: #667789;
+    --border-color: #E1E7ED;
+    --success-color: #18845B;
+    --warning-color: #B7791F;
+    --error-color: #C64747;
+  }
+
+  html, body, #root {
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+  }
+
+  body {
+    background-color: var(--main-bg);
+    color: var(--primary-text);
+    font-family: 'Inter', system-ui, -apple-system, sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    overflow-x: hidden;
+  }
+
+  /* Custom subtle scrollbars for dense data views */
+  ::-webkit-scrollbar {
+    width: 6px;
+    height: 6px;
+  }
+  ::-webkit-scrollbar-track {
+    background: transparent;
+  }
+  ::-webkit-scrollbar-thumb {
+    background: #CBD5E1;
+    border-radius: 9999px;
+  }
+  ::-webkit-scrollbar-thumb:hover {
+    background: #94A3B8;
+  }
+}
+
+@layer components {
+  /* Enterprise badge variants */
+  .badge-status {
+    @apply inline-flex items-center gap-1.5 px-2.5 py-0.5 rounded-full text-xs font-medium tracking-tight;
+  }
+  
+  /* Input focus ring matching brand teal */
+  .form-input-focus {
+    @apply focus:outline-none focus:ring-2 focus:ring-teal-600/30 focus:border-teal-600 transition-colors;
+  }
+
+  /* Enterprise Table Utilities */
+  .table-container {
+    @apply w-full overflow-x-auto bg-white rounded-xl border border-slate-200 shadow-subtle;
+  }
+
+  .table-header {
+    @apply bg-slate-50 border-b border-slate-200 text-[11px] font-bold text-slate-500 uppercase tracking-wider;
+  }
+
+  .table-row {
+    @apply border-b border-slate-100 hover:bg-slate-50/80 transition-colors text-xs text-slate-700;
+  }
+}
